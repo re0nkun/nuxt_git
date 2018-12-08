@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build: .
+    tty: true
+    command: npm run dev
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+      
+# RUN npx create-nuxt-app .
